@@ -1,0 +1,44 @@
+h1 {
+  color: red;
+}
+
+
+.box {
+  border: 1px solid red;
+  width: 400px;
+  height: 400px;
+}
+
+.box div {
+  border: 1px solid blue;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.box2 {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+a {
+  color: #31a275;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: dodgerblur;
+  text-decoration: underline;
+}

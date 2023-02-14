@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VC 사용법</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(function () {
+      $('.hide-btn').click(function () {
+        $('div').fadeOut();
+      });
+    })
+
+    $(function () {
+      $('.show-btn').click(function () {
+        $('div').fadeIn();
+      });
+    })
+  </script>
+  <style type="text/css">
+    p {
+      text-align: center;
+      color: red;
+    }
+
+    .center {
+      text-align: center;
+      color: yellow;
+    }
+
+    #center {
+      text-align: center;
+      color: blue;
+    }
+
+    p.center {
+      text-align: center;
+      color: rgb(39, 224, 76);
+    }
+
+
+    p span {
+      text-align: center;
+      color: purple;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <h1>제이쿼리</h1>
+
+  <a class="hide-btn">hide-btn</a>
+  <a class="show-btn">show-btn</a>
+  <div class="box">box1</div>
+
+
+
+
+
+  <h1>테스트입니다.</h1>
+  <h1>테스트입니다.</h1>
+  <img
+    src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMzAxMjFfODcg%2FMDAxNjc0MjYzMzcxOTA5.nHiHZbsMowQtsn9aiB-gSER9IErgkFS5MMY1SatSKfgg.aYjG8INWT2FXwhu-gDzJMGRkWehdG5dFpugvwNHgnp8g.JPEG%2F109533929_01.jpg&type=a340">
+
+
+
+  <p>테스트입니다.</p>
+  <p class="center">테스트입니다.</p>
+  <p id="center">테스트입니다.</p>
+  <p><span>테스트입니다.</span></p>
+  <span>테스트입니다.</span>
+
+  <ol style="list-style: disc;">
+    <li>List-ol-1</li>
+    <li>List-ol-2
+      <ul>
+        <li>List-ul-1</li>
+      </ul>
+    </li>
+    <li>List1</li>
+  </ol>
+
+
+  <!-- 자식 선택자(s1>s2)는 바로 아래 있는것만, 후손 선택자(s1 s2)는 아래 있는 해당 태그 모두 선택한다. -->
+  <div class="box">
+    <div>
+      <div>
+      </div>
+    </div>
+  </div>
+
+  <div style="width: 200px; height: 200px; border: 5px inset red; margin: 20px;">
+    <span style="margin-left: 20px;">asdadasd</span>
+  </div>
+
+  <div class="box">
+    <div style="float: right;">
+      <div style="clear: right;">
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="parent" style="width: 200px; height: 200px; border: 5px inset red;">
+    <div class="child" style="width: 100px; height: 100px; border: 5px inset blue; "></div>
+  </div>
+
+  <a>asdasdasd</a>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LEARN01</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(function(){
+      $('.testimonial-pic img').click(function(){
+        $(this).addClass('active')
+        $(this).siblings().removeClass('active')
+
+        $('.testimonial .content').removeClass('active')
+        $('#' + $(this).attr('data-alt')).addClass('active')
+      })
+    })
+  </script>
+</head>
+
+<body>
+
+  <div class="testimonial-section">
+    <h1><span>CodingWorks</span> Publishing Online Class with Inflearn</h1>
+    <div class="testimonial-pic">
+      <img class="active" src="/images/face-01.jpg" data-alt="tab1">
+      <img src="/images/face-02.jpg" data-alt="tab2">
+      <img src="/images/face-03.jpg" data-alt="tab3">
+      <img src="/images/face-04.jpg" data-alt="tab4">
+    </div>
+    <div class="testimonial">
+      <div class="content active" id="tab1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, excepturi optio assumenda commodi
+          blanditiis eius nobis. Qui ipsum reiciendis voluptatem consectetur ad eius quo, ipsa atque unde molestias
+          numquam non possimus cupiditate quasi distinctio vero repellat obcaecati nihil omnis eveniet. Qui iure quae
+          voluptatibus, minus maxime accusantium aut dolor explicabo facere ex omnis aliquid ullam numquam dolorum,
+          debitis aperiam? Saepe unde nobis vel similique repellat ut iure assumenda, maxime ab culpa fugiat maiores
+          nihil quos doloremque tempora nulla rerum eius obcaecati ipsum ratione, error nam ex. Rem, maxime. Unde
+          aliquid voluptate ullam adipisci veniam eveniet, quos dolor reprehenderit. Expedita, reprehenderit.</p>
+        <p>Sally, Web Desginer</p>
+      </div>
+      <div class="content" id="tab2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corporis quia odio assumenda eius modi itaque
+          autem sunt nam. Consectetur ratione illum dolor aliquid? Veritatis nulla dolorem consectetur dicta
+          necessitatibus atque excepturi, animi aliquid saepe veniam vero eos velit eius dignissimos quis nisi soluta
+          nesciunt tenetur. Commodi veniam soluta magni voluptatibus repellendus reprehenderit debitis praesentium
+          laudantium! Omnis rerum possimus pariatur dolorem similique fugit aspernatur accusamus necessitatibus alias
+          veritatis impedit ullam enim, asperiores quis. Obcaecati omnis non a impedit ea corrupti dolor sed deserunt
+          laboriosam ducimus harum odit, laudantium autem hic totam nesciunt deleniti qui iure in cum similique. Sint,
+          quae.</p>
+        <p>Amy, Graphic Designer</p>
+      </div>
+      <div class="content" id="tab3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellat, enim tempore quod rerum deserunt
+          libero eos molestiae nobis dolorem. Placeat quam unde consequuntur non recusandae tenetur qui, enim voluptatum
+          sed veniam labore nobis dolores est cumque mollitia. Cupiditate nam accusantium distinctio obcaecati rerum.
+          Quibusdam dolorem esse fuga, culpa quam fugiat iusto consequuntur id laboriosam nobis delectus est nostrum
+          odio explicabo quod voluptates quasi deserunt laborum, exercitationem ratione nam voluptatem, dolorum minus
+          ad! Repellat voluptas sunt voluptatibus doloremque ipsam repudiandae quidem incidunt sequi ab. Libero sit
+          voluptas aliquid culpa ab expedita. Dicta earum qui nemo quo vel, officiis autem eum?</p>
+        <p>Jung Ho, Developer</p>
+      </div>
+      <div class="content" id="tab4">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum porro inventore ipsum voluptates suscipit
+          facilis ducimus animi a, accusantium optio, esse voluptas laudantium iste beatae harum quam iure. Facere
+          consequuntur aliquid maiores doloribus, labore ad aliquam quam cupiditate eius reprehenderit nobis blanditiis
+          obcaecati, praesentium quo, soluta tenetur. Recusandae, illum corrupti blanditiis suscipit ab eius
+          voluptatibus sed. Consequatur nihil, cupiditate omnis facere nostrum asperiores eum, quae hic quod recusandae
+          cum rerum quis incidunt at, beatae qui dolor minus voluptas voluptates inventore. Maiores eaque earum aut
+          dolore, provident excepturi ipsum odit magni mollitia ullam reiciendis, autem illum similique, ipsa sequi
+          facere sed.</p>
+        <p>Chris, Printing Desinger</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
